@@ -38,6 +38,8 @@ const body = document.body
 const cartBtnOpen = document.getElementById("cart-btn")
 const cartBtnClose = document.getElementById("close-cart")
 const cartContainer = document.getElementById("cart-container")
+const menuBtn = document.getElementById("menu-btn")
+const linksContainer = document.getElementById("links-container")
 
 document.addEventListener("DOMContentLoaded", () => {
     loadComponent()
@@ -59,4 +61,6 @@ btnTheme.addEventListener("click", e => darkThemeChange())
 cartBtnOpen.addEventListener("click", e => cartContainer.classList.remove("hide"))
 
 cartBtnClose.addEventListener("click", e => cartContainer.classList.add("hide"))
+
+menuBtn.addEventListener("click", e => linksContainer.classList.toggle("undeployed"))
 
